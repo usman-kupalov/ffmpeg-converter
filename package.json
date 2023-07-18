@@ -1,0 +1,16 @@
+{
+  "name": "command-executer",
+  "version": "1.0.0",
+  "description": "command-executor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Usman Kupalov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.4.2",
+    "inquirer": "^8.2.5"
+  }
+}
