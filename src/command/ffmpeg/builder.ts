@@ -20,12 +20,14 @@ class FfmpegBuilder {
     if (!this.inputPath) {
       throw new Error('Input parameter not setted');
     }
-    const args: string[] = ['i', this.inputPath];
+    const args: string[] = ['-i', this.inputPath];
+    console.log(args);
     this.options.forEach((value, key) => {
       args.push(key);
       args.push(value);
     });
     args.push(outputPath);
+    console.log(args);
     return args;
   }
 }

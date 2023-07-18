@@ -9,13 +9,13 @@ abstract class CommandExecutor<Input> {
     const input = await this.prompt();
     const command = this.build(input);
     const stream = this.spawn(command);
-    this.processSpawn(stream, this.logger);
+    this.processStream(stream, this.logger);
   }
 
   protected abstract prompt(): Promise<Input>;
   protected abstract build(input: Input): ICommandExecute;
   protected abstract spawn(command: ICommandExecute): ChildProcessWithoutNullStreams;
-  protected abstract processSpawn(stream: ChildProcessWithoutNullStreams, logger: IStreamLogger): void;
+  protected abstract processStream(stream: ChildProcessWithoutNullStreams, logger: IStreamLogger): void;
 }
 
 export { CommandExecutor }; 

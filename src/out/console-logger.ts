@@ -2,7 +2,7 @@ import { IStreamLogger } from '../core/handler/stream.logger.interface';
 
 class ConsoleLogger implements IStreamLogger {
   private static logger: ConsoleLogger;
-  private static getIntstance() {
+  public static getIntstance() {
     if (!ConsoleLogger.logger) {
       ConsoleLogger.logger = new ConsoleLogger();
     }
@@ -20,3 +20,5 @@ class ConsoleLogger implements IStreamLogger {
   }
 
 }
+
+export { ConsoleLogger };
