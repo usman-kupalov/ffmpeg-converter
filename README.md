@@ -2,7 +2,7 @@
 
 ### This is a TypeScript program that provides video conversion functionality using FFmpeg library. The program allows you to convert a video file from one format to another, and also change the video resolution.
 
-## Before you can run this program, you need to have the following installed on your system:
+### Before you can run this program, you need to have the following installed on your system:
 - Node.js ↗ (version 14 or higher)
 - FFmpeg ↗ (version 4.0 or higher)
 
